@@ -25,9 +25,9 @@
       </p>
       <p>
         Gender
-        <input type="radio" id="male" name="gender" />
+        <input type="radio" id="male" name="gender" value="male" />
         <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" />
+        <input type="radio" id="female" name="gender" value="female" />
         <label for="female">Female</label>
       </p>
 
@@ -50,13 +50,37 @@
         />
       </p>
       <p>
-        <label for="country">Country</label>
-        <select name="country" id="country">
-          <option value="">Choose option</option>
-          <option value="poland">Poland</option>
-          <option value="germany">Germany</option>
-          <option value="france">France</option>
-        </select>
+        <fieldset>
+          <legend>Address</legend>
+          <p>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="">Choose option</option>
+              <option value="poland">Poland</option>
+              <option value="germany">Germany</option>
+              <option value="france">France</option>
+            </select>
+          </p>
+          <p>
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="City name" name="city"/>
+          </p>
+          <p>
+            <label for="street">Street</label>
+            <input type="text" id="street" placeholder="Street name" name="street"/>
+          </p>
+          <p>
+            <label for="postcode">Postcode</label>
+            <input type="text" id="city" placeholder="Postcode" name="city"/>
+          </p>
+        </fieldset>
+      </p>
+      
+      <p>
+        <label for="about">About You</label>
+       <textarea id="about" name="about">Write something about you
+         
+       </textarea>
       </p>
       <p>
         Verification
