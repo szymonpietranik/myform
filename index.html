@@ -10,7 +10,7 @@
   <body>
     <main class="main">
       <h1 class="main__header">Registration Form</h1>
-      <form class="form" action="url://z-którym-gadamy" method="post">
+      <form class="form" action="https://dev.cotenfrontend.pl" method="post">
         <p class="form__element">
           <label class="form__label" for="name">Your name</label>
           <input
@@ -74,7 +74,7 @@
             class="form__input"
             type="tel"
             id="tel"
-            name="phone_number"
+            name="phonenumber"
             placeholder="+ 48 000 123 121 "
           />
         </p>
@@ -116,13 +116,20 @@
               type="text"
               id="postecode"
               placeholder="Enter your postecode"
-              name="city"
+              name="postecode"
             />
           </p>
         </fieldset>
         <p class="form__element">
           <label class="form__label">From 1 to 10 how you rate this form</label>
-          <input class="form__input" type="range" min="0" max="100" step="10" />
+          <input
+            class="form__input"
+            name="range"
+            type="range"
+            min="0"
+            max="100"
+            step="10"
+          />
         </p>
         <p class="form__element">
           <label class="form__label" for="notice">Your notice</label>
@@ -143,11 +150,11 @@ Please write your notice
         </p>
         <p class="form__element">
           <input
-            requierd
             class="form__input form__input--agreement"
             type="checkbox"
             id="verification"
             name="verification"
+            value="agree"
           />
           <label class="form__label form__label--agreement" for="verification">
             I agree to everything you want
