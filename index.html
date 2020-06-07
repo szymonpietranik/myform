@@ -8,62 +8,82 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <main>
-      <h1>Registration Form</h1>
+    <main class="main">
+      <h1 class="main__header">Registration Form</h1>
       <form class="form" action="url://z-którym-gadamy" method="post">
-        <p class="form-element">
-          <label for="name">Your name</label>
+        <p class="form__element">
+          <label class="form__label" for="name">Your name</label>
           <input
+            class="form__input"
             type="text"
             id="name"
             name="name"
             placeholder="Enter yor name"
           />
         </p>
-        <p class="form-element">
-          <label for="surname">Your surname</label>
+        <p class="form__element">
+          <label class="form__label" for="surname">Your surname</label>
           <input
+            class="form__input"
             type="text"
             id="surname"
             name="surname"
             placeholder="Enter your surname"
           />
         </p>
-        <p>
-          <label for="date">Birth date</label>
-          <input type="date" id="date" name="birthdate" />
+        <p class="form__element">
+          <label class="form__label" for="date">Birth date</label>
+          <input class="form__input" type="date" id="date" name="birthdate" />
         </p>
-        <fieldset>
+        <fieldset class="form__fieldset">
           <legend>Gender</legend>
-          <input type="radio" id="male" name="gender" value="male" />
-          <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="female" />
-          <label for="female">Female</label>
+          <p class="form__element">
+            <input
+              class="form__input"
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+            />
+            <label class="form__label" for="male">Male</label>
+          </p>
+          <p class="form__element">
+            <input
+              class="form__input"
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+            />
+            <label class="form__label" for="female">Female</label>
+          </p>
         </fieldset>
 
-        <p>
-          <label for="email">Your e-mail</label>
+        <p class="form__element">
+          <label class="form__label" for="email">Your e-mail</label>
           <input
+            class="form__input"
             type="email"
             id="email"
             name="email"
             placeholder="example@email.com"
           />
         </p>
-        <p>
-          <label for="tel">Phone number</label>
+        <p class="form__element">
+          <label class="form__label" for="tel">Phone number</label>
           <input
+            class="form__input"
             type="tel"
             id="tel"
             name="phone_number"
             placeholder="+ 48 000 123 121 "
           />
         </p>
-        <fieldset>
+        <fieldset class="form__fieldset">
           <legend>Address</legend>
           <p>
-            <label for="country">Country</label>
-            <select name="country" id="country">
+            <label class="form__label" for="country">Country</label>
+            <select class="form__input" name="country" id="country">
               <option value="">Choose option</option>
               <option value="poland">Poland</option>
               <option value="germany">Germany</option>
@@ -71,8 +91,9 @@
             </select>
           </p>
           <p>
-            <label for="city">City</label>
+            <label class="form__label" for="city">City</label>
             <input
+              class="form__input"
               type="text"
               id="city"
               placeholder="Enter your city"
@@ -80,8 +101,9 @@
             />
           </p>
           <p>
-            <label for="street">Street</label>
+            <label class="form__label" for="street">Street</label>
             <input
+              class="form__input"
               type="text"
               id="street"
               placeholder="Enter your street"
@@ -89,8 +111,9 @@
             />
           </p>
           <p>
-            <label for="postecode">Postcode</label>
+            <label class="form__label" for="postecode">Postcode</label>
             <input
+              class="form__input"
               type="text"
               id="postecode"
               placeholder="Enter your postecode"
@@ -98,24 +121,37 @@
             />
           </p>
         </fieldset>
-        <p>
-          <label>From 1 to 10 how you rate this form</label>
-          <input type="range" min="0" max="100" step="10" />
+        <p class="form__element">
+          <label class="form__label">From 1 to 10 how you rate this form</label>
+          <input class="form__input" type="range" min="0" max="100" step="10" />
         </p>
-        <p>
-          <label for="notice">Your notice</label>
-          <textarea id="notice" name="notice">
+        <p class="form__element">
+          <label class="form__label" for="notice">Your notice</label>
+          <textarea
+            class="form__input form__input--textarea"
+            id="notice"
+            name="notice"
+          >
 Please write your notice
           </textarea>
         </p>
-        <p>
-          <input type="checkbox" id="verification" name="verification" />
-          <label for="verification">
+        <p class="form__element">
+          <input
+            class="form__input form__input--checkbox"
+            type="checkbox"
+            id="verification"
+            name="verification"
+          />
+          <label class="form__label" for="verification">
             I agree to everything you want CLICK CLICK
           </label>
         </p>
-        <p>
-          <input type="submit" value="Submit" />
+        <p class="form__element">
+          <input
+            class="form__input form__input--submit"
+            type="submit"
+            value="Submit"
+          />
         </p>
       </form>
     </main>
