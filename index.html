@@ -18,7 +18,7 @@
             type="text"
             id="name"
             name="name"
-            placeholder="Enter yor name"
+            placeholder="Enter your name"
           />
         </p>
         <p class="form__element">
@@ -39,23 +39,22 @@
           <legend>Gender</legend>
           <p class="form__element">
             <input
-              class="form__input"
+              class="form__input form__input--radio"
               type="radio"
               id="male"
               name="gender"
               value="male"
-            />
-            <label class="form__label" for="male">Male</label>
+            /><label class="label"> Male</label>
           </p>
           <p class="form__element">
             <input
-              class="form__input"
+              class="form__input form__input--radio"
               type="radio"
               id="female"
               name="gender"
               value="female"
             />
-            <label class="form__label" for="female">Female</label>
+            <label class="form__label" for="female"> Female</label>
           </p>
         </fieldset>
 
@@ -135,23 +134,25 @@
 Please write your notice
           </textarea>
         </p>
+        <p class="form__element form__element--submit">
+          <input
+            class="form__input form__input--submit"
+            type="submit"
+            value="submit form"
+          />
+        </p>
         <p class="form__element">
           <input
-            class="form__input form__input--checkbox"
+            requierd
+            class="form__input form__input--agreement"
             type="checkbox"
             id="verification"
             name="verification"
           />
-          <label class="form__label" for="verification">
-            I agree to everything you want CLICK CLICK
+          <label class="form__label form__label--agreement" for="verification">
+            I agree to everything you want
+            <strong class="special">CLICK CLICK</strong>
           </label>
-        </p>
-        <p class="form__element">
-          <input
-            class="form__input form__input--submit"
-            type="submit"
-            value="Submit"
-          />
         </p>
       </form>
     </main>

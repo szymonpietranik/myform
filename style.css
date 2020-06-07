@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #171717;
+  color: white;
+  font-family: "Fira Code", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 16px;
+}
+
+.form__label {
+  font-size: 16px;
+}
+
+.form__label--agreement {
+  font-size: 12px;
+}
+
+.form__input {
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid #ef476f;
+  width: 80vh;
+  margin: 15px 0;
+  display: block;
+  background-color: #171717;
+}
+
+.form__input--radio {
+  display: inline-block;
+  width: auto;
+}
+.form__input--agreement {
+  display: inline-block;
+  width: auto;
+}
+
+.form__input--submit {
+  background-color: #ffbd00;
+  border: none;
+  margin: 50px 0 10px 0;
+  font-weight: 600;
+  color: #ef476f;
+  width: 15vh;
+  padding: 8px 0;
+}
+
+.form__fieldset {
+  font-size: 16px;
+  border: none;
+  border-left: 1px solid #ef476f;
+}
+
+.form__element--submit {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.special {
+  color: #ef476f;
+}
