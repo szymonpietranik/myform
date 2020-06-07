@@ -4,52 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formularz</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>Registration Form</h1>
-    <h2>This is step 1</h2>
-    <form action="url://z-którym-gadamy" method="post">
-      <p>
-        <label for="name">Your Name</label>
-        <input
-          type="text"
-          id="name"
-          name="first_name"
-          placeholder="First Name"
-        />
-        <input type="text" name="last_name" placeholder="Last Name" />
-      </p>
-      <p>
-        <label for="date">Birthday</label>
-        <input type="date" id="date" name="birthday" />
-      </p>
-      <p>
-        Gender
-        <input type="radio" id="male" name="gender" value="male" />
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label>
-      </p>
+    <main>
+      <h1>Registration Form</h1>
+      <form class="form" action="url://z-którym-gadamy" method="post">
+        <p class="form-element">
+          <label for="name">Your name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter yor name"
+          />
+        </p>
+        <p class="form-element">
+          <label for="surname">Your surname</label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Enter your surname"
+          />
+        </p>
+        <p>
+          <label for="date">Birth date</label>
+          <input type="date" id="date" name="birthdate" />
+        </p>
+        <fieldset>
+          <legend>Gender</legend>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </fieldset>
 
-      <p>
-        <label for="email">Your Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="example@email.com"
-        />
-      </p>
-      <p>
-        <label for="tel">Phone Number</label>
-        <input
-          type="tel"
-          id="tel"
-          name="phone_number"
-          placeholder="+ 48 000 123 121 "
-        />
-      </p>
-      <p>
+        <p>
+          <label for="email">Your e-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+          />
+        </p>
+        <p>
+          <label for="tel">Phone number</label>
+          <input
+            type="tel"
+            id="tel"
+            name="phone_number"
+            placeholder="+ 48 000 123 121 "
+          />
+        </p>
         <fieldset>
           <legend>Address</legend>
           <p>
@@ -63,33 +72,52 @@
           </p>
           <p>
             <label for="city">City</label>
-            <input type="text" id="city" placeholder="City name" name="city"/>
+            <input
+              type="text"
+              id="city"
+              placeholder="Enter your city"
+              name="city"
+            />
           </p>
           <p>
             <label for="street">Street</label>
-            <input type="text" id="street" placeholder="Street name" name="street"/>
+            <input
+              type="text"
+              id="street"
+              placeholder="Enter your street"
+              name="street"
+            />
           </p>
           <p>
-            <label for="postcode">Postcode</label>
-            <input type="text" id="city" placeholder="Postcode" name="city"/>
+            <label for="postecode">Postcode</label>
+            <input
+              type="text"
+              id="postecode"
+              placeholder="Enter your postecode"
+              name="city"
+            />
           </p>
         </fieldset>
-      </p>
-      
-      <p>
-        <label for="about">About You</label>
-       <textarea id="about" name="about">Write something about you
-         
-       </textarea>
-      </p>
-      <p>
-        Verification
-        <input type="checkbox" id="verification" name="verification" />
-        <label for="verification">I'm not a robot</label>
-      </p>
-      <p>
-        <input type="submit" value="Submit" />
-      </p>
-    </form>
+        <p>
+          <label>From 1 to 10 how you rate this form</label>
+          <input type="range" min="0" max="100" step="10" />
+        </p>
+        <p>
+          <label for="notice">Your notice</label>
+          <textarea id="notice" name="notice">
+Please write your notice
+          </textarea>
+        </p>
+        <p>
+          <input type="checkbox" id="verification" name="verification" />
+          <label for="verification">
+            I agree to everything you want CLICK CLICK
+          </label>
+        </p>
+        <p>
+          <input type="submit" value="Submit" />
+        </p>
+      </form>
+    </main>
   </body>
 </html>
